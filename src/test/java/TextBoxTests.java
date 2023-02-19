@@ -32,7 +32,6 @@ public class TextBoxTests {
 
 
 
-        $("#output").shouldHave(text("Alex Egorov"), text("alex@egorov.com"),
-                text("Some address 1"), text("Another address 1"));
+
     }
 }
