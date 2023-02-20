@@ -5,18 +5,21 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
-public class PracticeRegistrationForm {
+public class PracticeFormTests {
+
     @BeforeAll
     static void beforeAll() {
+
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";
+
     }
 
     @Test
-    void studentRegistrationFormTest() {
+    void studentRegistrationFormTest ()
+    {
         open("/automation-practice-form");
 
         $("#firstName").setValue("Alex");
@@ -40,7 +43,7 @@ public class PracticeRegistrationForm {
         $(".modal-body").shouldHave(
                 text("Alex"),
                 text("Shav"),
-                text("AlexShav@mmmail.com")
-        );
+                text("AlexShav@mmmail.com"),
+                text("375291112233"));
     }
 }
