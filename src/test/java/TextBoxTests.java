@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class TextBoxTests {
     @BeforeAll
     static void beforeAll() {
-        Configuration.browserSize = "1920x1080";
+        Configuration.browserSize = "1366x768";
         Configuration.baseUrl = "https://demoqa.com";
     }
 
@@ -36,7 +36,7 @@ public class TextBoxTests {
         $("#react-select-3-input").pressEnter();
         $("#city").click();
         $("#react-select-4-input").pressEnter();
-        $("#submit").click();
+        $("#submit").pressEnter();
 
 
     }
