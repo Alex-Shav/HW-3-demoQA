@@ -27,7 +27,7 @@ public class TextBoxTests {
         $("#gender-radio-1").sendKeys(" ");
         $("#userNumber").setValue("375291112233");
         $("#dateOfBirthInput").click();
-        $("#dateOfBirthInput").setValue("24 Dec 1986").pressEnter();
+        $("#dateOfBirthInput").setValue("20 Dec 1986").pressEnter();
         $("#subjectsInput").setValue("History").pressEnter();
         $("#hobbies-checkbox-1").sendKeys(" ");
         $("#uploadPicture").uploadFile(new File("src/test/resources/Pic.png"));
