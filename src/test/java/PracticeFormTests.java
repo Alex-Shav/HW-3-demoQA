@@ -21,6 +21,8 @@ public class PracticeFormTests {
     void studentRegistrationFormTest ()
     {
         open("/automation-practice-form");
+        executeJavaScript("$('footer').remove()");
+        executeJavaScript("$('#fixedban').remove()");
 
         $("#firstName").setValue("Alex");
         $("#lastName").setValue("Shav");
@@ -46,7 +48,9 @@ public class PracticeFormTests {
                 text("Shav"),
                 text("AlexShav@mmmail.com"),
                 text("3752911122"),
-                text("Minsk")
+                text("Minsk"),
+                text("History")
+
         );
 
 
