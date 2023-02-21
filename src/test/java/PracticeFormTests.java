@@ -49,7 +49,11 @@ public class PracticeFormTests {
                 text("AlexShav@mmmail.com"),
                 text("3752911122"),
                 text("Minsk"),
-                text("History")
+                text("History"),
+                text("Sports"),
+                text("Male"),
+                text("NCR Delhi")
+
 
         );
 
